@@ -1,2 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_q-21wCqMEeeHWM2JLs7-jw" name="RootElement"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_q-21wCqMEeeHWM2JLs7-jw" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_YbevQCqOEeeHWM2JLs7-jw" name="Jugadores">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XHLR8CqSEeeHWM2JLs7-jw" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VJUosCqTEeeHWM2JLs7-jw" name="ganador">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aiVHACqOEeeHWM2JLs7-jw" name="Partida">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bhm14CqSEeeHWM2JLs7-jw" name="jugadores" type="_YbevQCqOEeeHWM2JLs7-jw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MLnG0CqTEeeHWM2JLs7-jw" name="palabra" type="_c718ECqOEeeHWM2JLs7-jw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_13avMiqWEeeHWM2JLs7-jw" name="palabra" type="_c718ECqOEeeHWM2JLs7-jw" association="_13aIICqWEeeHWM2JLs7-jw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2oeYsyqWEeeHWM2JLs7-jw" name="jugadores" type="_YbevQCqOEeeHWM2JLs7-jw" association="_2oeYsCqWEeeHWM2JLs7-jw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3-ty4SqWEeeHWM2JLs7-jw" name="muñeco" type="_eWGTkCqOEeeHWM2JLs7-jw" association="_3-tL0CqWEeeHWM2JLs7-jw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_piBcoCqSEeeHWM2JLs7-jw" name="iniciar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tuIQsCqSEeeHWM2JLs7-jw" name="finalizarPartida"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_c718ECqOEeeHWM2JLs7-jw" name="Palabra" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1bf8CqSEeeHWM2JLs7-jw" name="Letras" type="_yF6tICqOEeeHWM2JLs7-jw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jh7SUCqUEeeHWM2JLs7-jw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiHfkCqUEeeHWM2JLs7-jw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1Dew0SqWEeeHWM2JLs7-jw" name="letras" type="_yF6tICqOEeeHWM2JLs7-jw" association="_1DdisCqWEeeHWM2JLs7-jw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eWGTkCqOEeeHWM2JLs7-jw" name="Muñeco" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wf4TUCqQEeeHWM2JLs7-jw" name="piernaDerecha">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y_iMoCqQEeeHWM2JLs7-jw" name="piernaIzquierda">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_e6cE0CqQEeeHWM2JLs7-jw" name="brazoDerecho">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hSQQwCqQEeeHWM2JLs7-jw" name="brazoIzquierdo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_N2Nc4CqSEeeHWM2JLs7-jw" name="cabeza">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Sti_QCqSEeeHWM2JLs7-jw" name="muerto">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yF6tICqOEeeHWM2JLs7-jw" name="Letras">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_J23ScCqSEeeHWM2JLs7-jw" name="letra">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4hMckCqQEeeHWM2JLs7-jw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1DdisCqWEeeHWM2JLs7-jw" memberEnd="_1Dew0SqWEeeHWM2JLs7-jw _1DfX4CqWEeeHWM2JLs7-jw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1DeJwCqWEeeHWM2JLs7-jw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1Dew0CqWEeeHWM2JLs7-jw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1DfX4CqWEeeHWM2JLs7-jw" name="palabra" type="_c718ECqOEeeHWM2JLs7-jw" association="_1DdisCqWEeeHWM2JLs7-jw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_13aIICqWEeeHWM2JLs7-jw" memberEnd="_13avMiqWEeeHWM2JLs7-jw _13avMyqWEeeHWM2JLs7-jw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_13avMCqWEeeHWM2JLs7-jw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_13avMSqWEeeHWM2JLs7-jw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_13avMyqWEeeHWM2JLs7-jw" name="partida" type="_aiVHACqOEeeHWM2JLs7-jw" association="_13aIICqWEeeHWM2JLs7-jw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2oeYsCqWEeeHWM2JLs7-jw" memberEnd="_2oeYsyqWEeeHWM2JLs7-jw _2oe_wCqWEeeHWM2JLs7-jw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2oeYsSqWEeeHWM2JLs7-jw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2oeYsiqWEeeHWM2JLs7-jw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2oe_wCqWEeeHWM2JLs7-jw" name="partida" type="_aiVHACqOEeeHWM2JLs7-jw" association="_2oeYsCqWEeeHWM2JLs7-jw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3-tL0CqWEeeHWM2JLs7-jw" memberEnd="_3-ty4SqWEeeHWM2JLs7-jw _3-ty4iqWEeeHWM2JLs7-jw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3-tL0SqWEeeHWM2JLs7-jw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3-ty4CqWEeeHWM2JLs7-jw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3-ty4iqWEeeHWM2JLs7-jw" name="partida" type="_aiVHACqOEeeHWM2JLs7-jw" association="_3-tL0CqWEeeHWM2JLs7-jw"/>
+  </packagedElement>
+</uml:Model>
